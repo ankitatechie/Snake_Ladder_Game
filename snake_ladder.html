@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	
+<body>
+    
+<h1 class="text-center"><span style="color:red;">SNAKE</span> <span style="color:green;">AND</span> 
+<span style="color:orange;">LADDER</span> <span style="color:green;">MULTIPLAYER</span></h1>
+<section id="section1">
+<div class="container">
+<div class="row">
+<div class="col-md-2">
+					<div id="first_player">
+						<h3 class="text-center">ALICE</h3>
+						<div class="row">
+							<div class="col-md-6">
+								<h4 id="denote_pos">
+									Current <br />Position
+								</h4>
+							</div>
+							<div class="col-md-6">
+								<h4 id="fp_position"></h4>
+							</div>
+						</div>
+					</div>
+					<div style="position: absolute; padding-top: 50px;">
+						<div id="second_player">
+							<h3 class="text-center">BOB</h3>
+							<div class="row">
+							<div class="col-md-6">
+								<h4 id="denote_pos">
+									Current <br />Position
+								</h4>
+							</div>
+							<div class="col-md-6">
+								<h4 id="sp_position"></h4>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+<div class="col-md-8">
+<table class="table">
+<tr>
+							<td id="21"></td>
+							<td id="22"></td>
+							<td id="23"></td>
+							<td id="24"></td>
+							<td id="25"></td>
+						</tr>
+						<tr>
+							<td id="20"></td>
+							<td id="19"></td>
+							<td id="18"></td>
+							<td id="17"></td>
+							<td id="16"></td>
+						</tr>
+						<tr>
+							<td id="11"></td>
+							<td id="12"></td>
+							<td id="13"></td>
+							<td id="14"></td>
+							<td id="15"></td>
+						</tr>
+						<tr>
+							<td id="10"></td>
+							<td id="9"></td>
+							<td id="8"></td>
+							<td id="7"></td>
+							<td id="6"></td>
+						</tr>
+						<tr>
+							<td id="1"></td>
+							<td id="2"></td>
+							<td id="3"></td>
+							<td id="4"></td>
+							<td id="5"></td>
+						</tr>
+</table>
+</div>
+<div class="col-md-2">
+<button type="button" onclick="showNumber();">Roll Dice</button>
+<h2 id="number" style="display:none;">You got <span id="num"></span></h2>
+</div>
+</div>
+</div>
+</section>
+</body>
+<!-- jQuery Version 1.8.3.min -->
+<script src="static/js/jquery-1.8.3.min.js"></script>
+<script src="static/js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+
+</html> 
