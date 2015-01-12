@@ -11,7 +11,7 @@ var Game = function(player1,player2){
 
 var turn="1";
 var snakes=new Map();
-snakes.set(20,4);
+snakes.set(22,4);
 snakes.set(11,2);
 snakes.set(17,8);
 var ladders=new Map();
@@ -32,7 +32,7 @@ Player.prototype.move = function(number,color) {
 		return;
 	}
 	if(this.position==25){
-		alert(this.name+" won");
+		alert(this.name+" won. See you again.");
 		window.location.reload();
 	}
 	if(snakes.has(this.position)){
@@ -44,7 +44,6 @@ Player.prototype.move = function(number,color) {
 	if(lastPosition!=0){
 		document.getElementById(lastPosition).style.backgroundColor='rgba(' + 186 + ',' + 191 + ',' + 222 + ','+0.3+')';
 	}
-	document.getElementById(this.position).style.backgroundColor=color;
 	document.getElementById(this.position).style.backgroundColor=color;
 	document.getElementById(this.position).style.opacity='0.9';
 	

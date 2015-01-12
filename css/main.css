@@ -1,3 +1,6 @@
+body{
+text-shadow: 1px 1px 4px rgba(0,0,0,.6);
+}
 #section1{
 padding-top:50px;
 }
@@ -21,7 +24,6 @@ width:100px;
 border:0px solid #fff;
 }
 h1{
-text-shadow: 1px 1px 4px rgba(0,0,0,.6);
 font-size: 50px;
 font-weight: 700;
 }
@@ -37,7 +39,6 @@ background-color:#FFB52B;
 }
 h3{
 color:#fff;
-text-shadow: 1px 1px 4px rgba(0,0,0,.6);
 }
 button{
 height:60px;
@@ -48,4 +49,5 @@ color:#fff;
 
 #denote_pos{
 padding-left:10px;
+color:grad;
 }
